@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './worker_item.dart';
 import 'list_of_workers.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({Key? key}) : super(key: key);
@@ -122,44 +123,52 @@ class _CustomDrawerState extends State<CustomDrawer> {
               Navigator.pop(context);
             },
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: CircleAvatar(
-                  backgroundColor: Color(0xff1b4754),
-                  radius: 20.0,
-                  child: Icon(
-                    Icons.facebook,
-                    color: Colors.white,
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 180.0,
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    backgroundColor: Color(0xff1b4754),
+                    radius: 25.0,
+                    child: Icon(
+                      Icons.facebook,
+                      color: Colors.white,
+                      size: 35.0,
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: CircleAvatar(
-                  backgroundColor: Color(0xff1b4754),
-                  radius: 20.0,
-                  child: Icon(
-                    Icons.facebook,
-                    color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    backgroundColor: Color(0xff1b4754),
+                    radius: 25.0,
+                    child: FaIcon(
+                      FontAwesomeIcons.instagram,
+                      color: Colors.white,
+                      size: 35.0,
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: CircleAvatar(
-                  backgroundColor: Color(0xff1b4754),
-                  radius: 20.0,
-                  child: Icon(
-                    Icons.facebook,
-                    color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    backgroundColor: Color(0xff1b4754),
+                    radius: 25.0,
+                    child: FaIcon(
+                      FontAwesomeIcons.snapchat,
+                      color: Colors.white,
+                      size: 35.0,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
