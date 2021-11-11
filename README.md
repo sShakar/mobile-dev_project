@@ -1,8 +1,12 @@
-# wasstaapp
+# Mobile Development Class Project
 
-A new Flutter project.
+### Flutter application about viewing workers and builders.
 
-## Getting Started
+## Team Null
+- Ajer Hashim
+- Hussein Talal
+- Shakar Kosar
+- Yassin Hussein
 
 This project is a starting point for a Flutter application.
 
