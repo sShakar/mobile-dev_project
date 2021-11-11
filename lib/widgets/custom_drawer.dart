@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wasstaapp/widgets/worker_profile.dart';
 import './worker_item.dart';
 import 'list_of_workers.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -95,6 +96,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
             onTap: () {
               // Update the state of the app.
               // ...
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => WorkerProfile()),
+              );
             },
           ),
           Divider(
