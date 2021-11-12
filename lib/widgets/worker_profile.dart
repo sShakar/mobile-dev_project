@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:wasstaapp/widgets/custom_app_bar.dart';
-import 'package:google_maps/google_maps.dart';
 
 class WorkerProfile extends StatefulWidget {
   const WorkerProfile({Key? key}) : super(key: key);

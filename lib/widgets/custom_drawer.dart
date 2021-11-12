@@ -91,7 +91,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.exit_to_app),
+            leading: const FaIcon(
+              FontAwesomeIcons.signInAlt,
+            ),
             title: const Text('چوونە ژوورەوە'),
             onTap: () {
               // Update the state of the app.
@@ -102,7 +104,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
               );
             },
           ),
-          Divider(
+          const Divider(
             thickness: 1,
             height: 15,
           ),
@@ -115,7 +117,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
               Navigator.pop(context);
             },
           ),
-          Divider(
+          const Divider(
             thickness: 1,
             height: 15,
           ),
@@ -137,38 +139,50 @@ class _CustomDrawerState extends State<CustomDrawer> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: CircleAvatar(
                     backgroundColor: Color(0xff1b4754),
                     radius: 25.0,
-                    child: Icon(
-                      Icons.facebook,
-                      color: Colors.white,
-                      size: 35.0,
+                    child: IconButton(
+                      padding: EdgeInsets.zero,
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.facebook,
+                        color: Colors.white,
+                        size: 35.0,
+                      ),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: CircleAvatar(
-                    backgroundColor: Color(0xff1b4754),
+                    backgroundColor: const Color(0xff1b4754),
                     radius: 25.0,
-                    child: FaIcon(
-                      FontAwesomeIcons.instagram,
-                      color: Colors.white,
-                      size: 35.0,
+                    child: IconButton(
+                      padding: EdgeInsets.zero,
+                      onPressed: () {},
+                      icon: const FaIcon(
+                        FontAwesomeIcons.instagram,
+                        color: Colors.white,
+                        size: 35.0,
+                      ),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: CircleAvatar(
-                    backgroundColor: Color(0xff1b4754),
+                    backgroundColor: const Color(0xff1b4754),
                     radius: 25.0,
-                    child: FaIcon(
-                      FontAwesomeIcons.snapchat,
-                      color: Colors.white,
-                      size: 35.0,
+                    child: IconButton(
+                      padding: EdgeInsets.zero,
+                      onPressed: () {},
+                      icon: const FaIcon(
+                        FontAwesomeIcons.snapchat,
+                        color: Colors.white,
+                        size: 35.0,
+                      ),
                     ),
                   ),
                 ),
